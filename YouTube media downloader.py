@@ -36,10 +36,10 @@ lbl.place(x=750, y=78, anchor='s')
 
 
 
-# def complete_audio_video_download():
-#     id = txtfld_url.get()
-#     subprocess.run(['youtube-dl', id])
-#     messagebox.showinfo("showinfo", "Video+Audio Downloaded")
+def complete_audio_video_download():
+     id = txtfld_url.get()
+     subprocess.run(['youtube-dl', id])
+     
 
 
 def complete_audio_download():
@@ -135,8 +135,8 @@ btn_aud=Button(window, text="Download Audio", fg='#D1F0BD',bg='#455D6F' , bd=2, 
 btn_aud.place(x=70, y=430)
 btn_vid=Button(window, text="Download Video", fg='#D1F0BD',bg='#455D6F' ,bd=2, width=15, command=complete_video_download)
 btn_vid.place(x=200, y=430)
-# btn_avid=Button(window, text="Download Audio + Video", fg='white',bg='grey' ,bd=2, width=20, command = complete_audio_video_download)
-# btn_avid.place(x=330, y=180)
+btn_avid=Button(window, text="Download Audio + Video", fg='#D1F0BD',bg='#455D6F' ,bd=2, width=20, command = complete_audio_video_download)
+btn_avid.place(x=70, y=490)
 
 
 
